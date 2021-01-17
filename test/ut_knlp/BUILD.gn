@@ -1,0 +1,20 @@
+executable("ut_knlp") {
+
+  public_deps = [
+    "//src/nlp:knlp_sources"
+  ]
+  testonly = true
+
+  deps = [
+    "//test:gtest_main",
+    "//test:gtest_and_gmock"
+  ]
+
+  include_dirs = [
+    "//src",
+  ]
+
+  sources = [
+    "knlp.test.cpp",
+  ]
+}

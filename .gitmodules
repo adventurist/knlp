@@ -1,0 +1,9 @@
+[submodule "third_party/gn"]
+	path = third_party/gn
+	url = https://gn.googlesource.com/gn
+[submodule "third_party/googletest"]
+	path = third_party/googletest
+	url = https://github.com/google/googletest
+[submodule "third_party/process_executor"]
+	path = third_party/process_executor
+	url = https://github.com/adventurist/process_executor.git

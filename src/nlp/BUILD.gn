@@ -1,0 +1,11 @@
+source_set("knlp_sources") {
+
+  include_dirs = [
+    "//src",
+  ]
+
+  sources = [
+    "//src/nlp/nlp.cpp",
+  ]
+}
+
