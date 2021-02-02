@@ -11,7 +11,14 @@ enum TokenType {
   location       = 0x00,
   person         = 0x01,
   organization   = 0x02,
-  unknown        = 0xFF
+  unknown        = 0x03
+};
+
+const std::vector<std::string> TOKEN_TYPES{
+  "Location",
+  "Person",
+  "Organization",
+  "Unknown"
 };
 
 struct Token {
