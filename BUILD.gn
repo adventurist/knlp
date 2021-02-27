@@ -2,7 +2,7 @@ all_tests = [
   "//test/ut_knlp",
 ]
 
-executable("knlp") {
+shared_library("knlp") {
   public_deps = [
     "//src/nlp:knlp_sources"
   ]
@@ -12,9 +12,6 @@ executable("knlp") {
     "//third_party/",
   ]
 
-  sources = [
-    "//src/main.cpp",
-  ]
 }
 
 group("tests") {
