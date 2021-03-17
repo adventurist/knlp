@@ -1,7 +1,7 @@
 #include "nlp.hpp"
 
 namespace conversation {
-const std::string TOKENIZER_PATH{"third_party/MITIE/tools/ner_stream/ner_stream third_party/MITIE/MITIE-models/english/ner_model.dat > tokenized_message.txt > tokenized_message.txt"};
+const std::string TOKENIZER_PATH{"third_party/knlp/third_party/MITIE/tools/ner_stream/ner_stream third_party/knlp/third_party/MITIE/MITIE-models/english/ner_model.dat > tokenized_message.txt > tokenized_message.txt"};
 
 const std::string get_executable_cwd() {
   char* path = realpath("/proc/self/exe", NULL);
@@ -17,7 +17,7 @@ std::string TokenizeText(std::string s) {
 
   std::system(execution_line.c_str());
     return std::string{
-      static_cast<std::stringstream const&>(
+      static_cast<const std::stringstream&>(
         std::stringstream() << std::ifstream("tokenized_message.txt").rdbuf())
         .str()};
 }
